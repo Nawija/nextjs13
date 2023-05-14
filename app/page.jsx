@@ -13,7 +13,7 @@ const Home = () => {
                 Dzięki szybkości i wydajności, nasze strony są łatwo dostępne
                 dla każdego, bez względu na urządzenie, z jakiego korzystają.
             </p>
-            
+
             <Feed />
         </section>
     );

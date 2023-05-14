@@ -8,10 +8,9 @@ const Nav = () => {
     const [showMenu, setMenu] = useState(false);
     const handleMenu = () => setMenu(!showMenu);
 
-
     return (
-        <nav className="flex-between w-full mb-8 lg:mb-12 pt-3">
-            <Link href="/" className="flex-center gap-2">
+        <nav className="flex-between w-full mb-8 lg:mb-12 pt-3 z-50">
+            <Link href="/" className="flex-center gap-2 z-50">
                 <Image
                     src="/assets/images/logo.svg"
                     alt="Seovileo Logo"
@@ -53,17 +52,17 @@ const Nav = () => {
             <ul
                 className={
                     !showMenu
-                        ? "absolute transition-all -translate-y-full duration-200 inset-0 w-full h-full opacity-0 flex-center flex-col space-y-5"
-                        : "absolute transition-transform translate-y-0 duration-200 inset-0 w-full h-full opacity-100 bg-gray-200 flex-center flex-col space-y-5"
+                        ? "absolute transition-all -translate-x-full duration-200 top-0 left-0 w-full h-full opacity-0 flex-center flex-col"
+                        : "absolute transition-transform translate-x-0 duration-200 top-0 left-0 w-full h-full opacity-100 bg-gray-200 flex-center flex-col space-y-2 shadow-lg font-bold"
                 }
             >
-                <li>Home</li>
-                <li>Usługi</li>
-                <li>Porjekty</li>
-                <li>Porjekty</li>
-                <li>Porjekty</li>
-                <li>Kontakt</li>
-                <li>Darmowa Wycena</li>
+                <Link href="/" className="p-3">Home</Link>
+                <Link href="/" className="p-3">Usługi</Link>
+                <Link href="/" className="p-3">Porjekty</Link>
+                <Link href="/" className="p-3">Porjekty</Link>
+                <Link href="/" className="p-3">Porjekty</Link>
+                <Link href="/" className="p-3">Kontakt</Link>
+                <Link href="/" className="p-3">Darmowa Wycena</Link>
             </ul>
         </nav>
     );
