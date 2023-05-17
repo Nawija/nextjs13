@@ -52,15 +52,15 @@ const Nav = () => {
             <ul
                 className={
                     !showMenu
-                        ? "absolute transition-all -translate-x-full duration-200 top-0 left-0 w-full h-full opacity-0 flex-center flex-col"
+                        ? "absolute transition-all -translate-x-full duration-200 top-0 left-0 w-full h-full opacity-0 lg:opacity-100 lg:static lg:translate-x-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:font-semibold lg:text-sm flex-center flex-col"
                         : "absolute transition-transform translate-x-0 duration-200 top-0 left-0 w-full h-full opacity-100 bg-gray-200 flex-center flex-col space-y-2 shadow-lg font-bold"
                 }
             >
                 <Link href="/" className="p-3">Home</Link>
                 <Link href="/" className="p-3">Usługi</Link>
-                <Link href="/" className="p-3">Porjekty</Link>
-                <Link href="/" className="p-3">Porjekty</Link>
-                <Link href="/" className="p-3">Porjekty</Link>
+                <Link href="/" className="p-3">Projekty</Link>
+                <Link href="/" className="p-3">Projekty</Link>
+                <Link href="/" className="p-3">Projekty</Link>
                 <Link href="/" className="p-3">Kontakt</Link>
                 <Link href="/" className="p-3">Darmowa Wycena</Link>
             </ul>
