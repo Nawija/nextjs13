@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
+    "gql": "npx grafbase dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,6 +14,7 @@
     "bcrypt": "^5.1.0",
     "datocms-client": "^3.5.21",
     "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
     "graphql-request": "^6.0.0",
     "mongodb": "^5.4.0",
     "mongoose": "^7.1.1",
