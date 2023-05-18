@@ -1,5 +1,12 @@
 type Post @model {
-  title: String!
-  slug: String! @unique
-  views: Int @default(value: 0)
+    id: ID!
+    title: String!
+    slug: String! @unique
+    content: String
+    comments: [Comments]
+}
+type Comments @model {
+    id: ID!
+    message: String!
+    published: Boolean @default(value: false)
 }
