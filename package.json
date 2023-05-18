@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
+    "show": "next dev --show-all",
     "gql": "npx grafbase dev",
     "build": "next build",
     "start": "next start",
