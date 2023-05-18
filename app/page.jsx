@@ -11,9 +11,6 @@ export default function Home() {
                 Dzięki szybkości i wydajności, nasze strony są łatwo dostępne
                 dla każdego, bez względu na urządzenie, z jakiego korzystają.
             </p>
-            {/* {allPoradniks.map((poradnik) => (
-                    <p key={poradnik.title}>{poradnik.title}</p>
-                ))} */}
             <div className="h-[200vh]" />
         </section>
     );

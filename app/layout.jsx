@@ -1,11 +1,5 @@
 import "@styles/global.css";
 import Nav from "@components/Nav";
-import { Montserrat } from "@next/font/google";
-
-const montserrat = Montserrat({
-    weight: ["400", "700"],
-    subsets: ["latin"],
-});
 
 export const metadata = {
     title: "App",
@@ -15,7 +9,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
     return (
         <html lang="pl">
-            <body className={`${montserrat.className}`}>
+            <body>
                 <div className="main">
                     <div className="gradient" />
                 </div>
